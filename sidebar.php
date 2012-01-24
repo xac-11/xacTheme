@@ -16,8 +16,8 @@
 	<aside class="widget">
 		<h3 class="widget-title">Version</h3>
 				author: xac<br />
-				date:	20. Jan 2012<br />
+				date:	24. Jan 2012<br />
 				xacTheme version: 0.1<br />
-				build: 2001201201
+				build: 0120120124
 	</aside>
 </div><!-- #sidebar -->

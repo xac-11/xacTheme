@@ -72,7 +72,7 @@ function xac_nav_menu() {
 	$flRightEls = array();
 	$flLeftEls = array();
 	
-	$flLeftEls[] = new FloatElement('home', get_bloginfo('url') ); // home 
+	//$flLeftEls[] = new FloatElement('home', get_bloginfo('url') ); // home 
 	
 	foreach ( (array) $menu_items as $key => $menu_item ) {
 		if( strtolower($menu_item->title) == "separator" ) {
@@ -109,8 +109,8 @@ function xac_nav_menu() {
 	
 	/** search form **/
 	$menu_list .= '<li class="floatRight noBorder noHover">						
-						<div id="search" action="'. get_bloginfo('url') .'">
-							<form method="get" id="searchform" action="#">
+						<div id="search">
+							<form method="get" id="searchform" action="'. esc_url(get_bloginfo('url')) .'">
 								<button type="button" class="button" id="clearBtn"></button>
 								<input type="text" class="field" name="s" id="s"
 									placeholder="suche" />

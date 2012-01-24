@@ -27,9 +27,9 @@ if (!session_id())
 /**********************/
 /** required plugins **/
 
-sidebar-login	http://wordpress.org/extend/plugins/sidebar-login/
-wp-paginate		http://wordpress.org/extend/plugins/wp-paginate/
-user-photo 		http://wordpress.org/extend/plugins/user-photo/
+sidebar-login		http://wordpress.org/extend/plugins/sidebar-login/
+wp-paginate			http://wordpress.org/extend/plugins/wp-paginate/
+user-photo 			http://wordpress.org/extend/plugins/user-photo/
 Breadcrumb NavXT	http://wordpress.org/extend/plugins/breadcrumb-navxt/installation/
 
 /************************/
