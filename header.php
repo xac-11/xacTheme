@@ -15,7 +15,12 @@
 		wp_enqueue_script('xacThemeMain', get_bloginfo('stylesheet_directory') . '/js/xacThemeMain.js', array('jquery', 'jquery ui'), '18012012' );
 
 		wp_register_script('modernizr', 'http://www.modernizr.com/downloads/modernizr-2.0.6.js');
-		wp_enqueue_script('modernizr');
+		wp_enqueue_script('modernizr');	
+		
+		if( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+			wp_enqueue_script( 'comment-reply' );
+		}
+		wp_head();
 	?>
 
 </head>

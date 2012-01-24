@@ -179,4 +179,41 @@ function xac_get_private_cats() {
 	$catId = get_cat_ID('private');
 	$categories = get_categories( array('child_of' => $catId));
 }
+
+
+function xac_comment_callback( $comment, $args, $depth) {
+	$GLOBALS['comment'] = $comment; ?>
+   <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
+     <div id="comment-<?php comment_ID(); ?>">
+
+      
+      				<div class="avatar"><?php
+						if (function_exists('userphoto_the_author_thumbnail'))
+							userphoto_the_author_thumbnail();
+	 					?>
+ 					</div>
+ 					
+ 					<div class="meta">
+						<div class="author"><?php printf(__('%s'), get_comment_author_link()) ?></div>
+						<div class="date"><?php printf(__('%1$s at %2$s'), get_comment_date(),  get_comment_time()) ?></div>	
+					</div>
+ 					
+      				
+      				<div class="content"><?php comment_text() ?></div>
+
+			      <div class="reply">
+			         <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+			      </div>
+			      
+			      <div class="awaiting">
+			     	<?php if ($comment->comment_approved == '0')  {
+         				 _e('Your comment is awaiting moderation.');
+					} ?>
+      				</div>
+
+			      <div class="edit">
+			      			<?php edit_comment_link(__('(Edit)'),'  ','') ?></div>
+			     </div>
+<?php
+}
 ?>
