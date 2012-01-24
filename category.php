@@ -3,18 +3,22 @@
 	get_header(); 
 ?>
 		<div id="page">
-			<div id="pagecontent">
+			<div id="categorypage">
 				<?php  
 				//if( is_category() ) {
 					foreach (get_the_category() as $category ){
-						if( $category->name == 'private' ) {
-							$page_content = get_page_by_title('private');
+						if( strtolower($category->name) == 'private' ) {
+							$page_content = get_page_by_title('Private');
 							setup_postdata($page_content );
+							echo "<div id='categories' title='Kategorien'>" . xac_get_child_cats('private') . "</div>";
 							get_template_part( 'content', 'page' );
-						} else if( $category->name == 'public') {
-							$page_content = get_page_by_title('public');
+							
+						} else if( strtolower($category->name) == 'public') {
+							$page_content = get_page_by_title('Public');
 							setup_postdata($page_content );
+							echo "<div id='categories' title='Kategorien'>" . xac_get_child_cats('public') . "</div>";
 							get_template_part( 'content', 'page' );
+							
 						}
 					}
 				//}

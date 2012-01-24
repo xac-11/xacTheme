@@ -21,7 +21,7 @@
 				if( have_posts()){
 					while( have_posts() ) {
 						the_post();		
-						get_template_part( 'content', 'excerpt' );
+						get_template_part( 'content', 'page' );
 					}
 					wp_reset_postdata();
 				}

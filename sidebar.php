@@ -1,6 +1,6 @@
 <div id="sidebar">
 	<?php dynamic_sidebar('RightSideBar');?>
-
+<!--
 	<aside id="cats" class="widget">
 		<h3 class="widget-title">Kategorien</h3>
 		<div id="public">
@@ -12,6 +12,7 @@
 			</div>
 		<?php endif;?>
 	</aside>
+-->
 	
 	<aside class="widget">
 		<h3 class="widget-title">Version</h3>

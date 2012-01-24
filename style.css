@@ -354,6 +354,81 @@ nav #search #submitBtn {
 /************************************************************************************************ BREADCRUMBS **/
 /***************************************************************************************************************/
 
+/***************************************************************************************************************/
+/** CATEGORYPAGE ************************************************************************************************/
+
+#categorypage {
+	font-size: 12px;
+	padding-right: 11px;
+	
+}
+
+#categories {
+	margin: 11px 0;
+	margin-left: 60px;
+}
+
+#categorypage .categorypagecontent_wrapper {
+	font-size: 12px;
+	padding: 7px;
+	color: rgb( 128, 128, 128 );
+	
+	display: block;
+	margin-left: 11px;
+	border: 1px solid rgb( 128, 128, 128 );
+	-moz-box-shadow: 0px 0px 6px rgb( 128, 128, 128 );
+	-webkit-box-shadow: 0px 0px 6px rgb( 128, 128, 128 );
+	box-shadow: 0px 0px 6px rgb( 128, 128, 128 );
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#categorypage .categorypagecontent_wrapper strong {
+	font-weight: bold;
+}
+
+
+#categories:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+
+#categorypage #categories li {
+	list-style: none;
+	padding: 4px;
+	float: left;
+}
+
+#categorypage a {
+	text-decoration: none;
+	padding: 2px;
+	margin: 0;
+	color: rgb( 128, 128, 128 );
+	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	
+	-webkit-box-shadow: 0px 0px 4px #808080;  
+    -moz-box-shadow: 0px 0px 4px #808080;  
+    box-shadow: 0px 0px 4px #808080; 
+	
+}
+
+#categorypage a:hover {
+	color: rgb( 255, 255, 255 );
+	background: rgb( 128, 128, 128 );
+
+}
+
+
+/*********************************************************************************************** CATEGORYPAGE **/
+/***************************************************************************************************************/
 
 /***************************************************************************************************************/
 /** SIDEBAR ****************************************************************************************************/

@@ -152,7 +152,7 @@ function xac_get_post_categories( $post_id ) {
 	foreach($post_categories as $c){
 		$cat = get_category( $c );
 		if( $cat->slug != 'public' && $cat->slug != 'private') {
-			$cats .= '<a href=\'/?cat='. $cat->cat_ID. '\'>' . $cat->name . '</a>';
+			$cats .= "<a href='" . get_category_link( $cat->cat_ID ) . "'>" . $cat->name . "</a>";
 		}
 	}
 	return $cats;
@@ -164,7 +164,7 @@ function xac_get_child_cats($catname) {
 	$out = '<ul>';
 	foreach($categories as $c){
 		$cat = get_category( $c );
-		$out .= '<li><a href=\'/?cat='. $cat->cat_ID. '\'>' . $cat->name . '</a></li>';
+		$out .= "<li><a href='" . get_category_link( $cat->cat_ID ) . "'>" . $cat->name . "</a></li>";
 	}
 	$out .= '</ul>';
 	return $out;	

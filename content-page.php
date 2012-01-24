@@ -1,6 +1,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<div class="content_wrapper">
-			<div class="content">
+		<div class="categorypagecontent_wrapper">
+			<div class="categorypage_content">
 				<?php the_content(); ?>
 			</div>
 		</div><!-- .entry-content -->
