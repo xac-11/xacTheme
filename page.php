@@ -2,7 +2,7 @@
 	xac_authorisation();
 	get_header(); 
 ?>
- 		<div id="page">
+ 		<div id="page">	
 			<div id="articles">
 			<?php  
 				/** define posts of the category to display **/

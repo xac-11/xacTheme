@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-		<?php echo "bin ik here?"; ?>
  		<div id="page">
  			index.php
 		</div><!-- #page -->
