@@ -72,6 +72,8 @@ function xac_nav_menu() {
 	$flRightEls = array();
 	$flLeftEls = array();
 	
+	$flLeftEls[] = new FloatElement('home', get_bloginfo('url') ); // home 
+	
 	foreach ( (array) $menu_items as $key => $menu_item ) {
 		if( strtolower($menu_item->title) == "separator" ) {
 			$floatRight = true;

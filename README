@@ -1,7 +1,6 @@
 TODO:
 
 	design home
-	style paggination
 	style images in posts
 	comments
 	search page
@@ -10,7 +9,10 @@ TODO:
 	user-photo to sidebar-login
 	
 	create images gallery
-		
+	
+change log:
+	paggination added/styled
+	breadcrubs added/styled
 
 /*******************/
 /** configuration **/
@@ -28,6 +30,7 @@ if (!session_id())
 sidebar-login	http://wordpress.org/extend/plugins/sidebar-login/
 wp-paginate		http://wordpress.org/extend/plugins/wp-paginate/
 user-photo 		http://wordpress.org/extend/plugins/user-photo/
+Breadcrumb NavXT	http://wordpress.org/extend/plugins/breadcrumb-navxt/installation/
 
 /************************/
 /** permalink structur **/
@@ -60,3 +63,4 @@ public
 	- cat 2
 	- cat 3
 	...
+	
